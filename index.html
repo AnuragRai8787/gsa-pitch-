@@ -19,25 +19,8 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .roadmap-section, .vision-detail {
-            background-color: #ffffff;
-            border-radius: 1rem;
-            padding: 2rem;
-            margin: 3rem auto;
-            max-width: 900px;
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.05);
-        }
-        .step {
-            margin-bottom: 2rem;
-        }
-        .step-title {
-            font-weight: 700;
-            font-size: 1.25rem;
-            color: #4285F4;
-        }
-        .step-desc {
-            color: #4a5568;
-            font-size: 1rem;
+        section {
+            scroll-margin-top: 4rem;
         }
     </style>
 </head>
@@ -56,47 +39,49 @@
                 <a href="https://github.com/AnuragRai8787" class="text-blue-600 font-medium hover:underline" target="_blank">GitHub</a>
             </div>
             <div class="mt-12">
-                <a href="#roadmap" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition">Explore My GSA Vision</a>
+                <a href="#vision" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-700 transition">Explore My GSA Vision</a>
             </div>
         </div>
-
-        <section id="roadmap" class="roadmap-section mt-16">
-            <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">🚀 My GSA Roadmap & Vision</h2>
-            <div class="step">
-                <h3 class="step-title">1. Inspire Curiosity with AI & Gemini</h3>
-                <p class="step-desc">Organize campus-wide workshops and demos using Gemini for tasks like resume building, assignment assistance, and project brainstorming to showcase its power and accessibility.</p>
-            </div>
-            <div class="step">
-                <h3 class="step-title">2. Create Student-Led Learning Pods</h3>
-                <p class="step-desc">Launch collaborative learning circles where peers solve real problems using Google tools, ML kits, and data science APIs. Encourage co-creation and peer teaching.</p>
-            </div>
-            <div class="step">
-                <h3 class="step-title">3. Hackathons + GDSC Synergy</h3>
-                <p class="step-desc">Host innovation challenges blending Google Cloud, Gemini, and community themes, building bridges between GDSC, other clubs, and local developers.</p>
-            </div>
-            <div class="step">
-                <h3 class="step-title">4. Showcase Impact Stories</h3>
-                <p class="step-desc">Regularly highlight student success stories via social media, LinkedIn posts, and newsletters to amplify reach and motivate involvement.</p>
-            </div>
-            <div class="step">
-                <h3 class="step-title">5. Stay Feedback-Driven</h3>
-                <p class="step-desc">Keep all events interactive, feedback-driven, and inclusive — improving each time to better serve the diverse learning styles on campus.</p>
-            </div>
-        </section>
-
-        <section class="vision-detail mt-10">
-            <h2 class="text-3xl font-bold mb-6 text-center">🌟 Vision Beyond the Pitch</h2>
-            <p class="text-gray-700 text-lg leading-relaxed mb-6">
-                My goal as a Google Student Ambassador isn’t just to promote technology, but to embed a culture of curiosity, collaboration, and compassion on campus. With Gemini, we unlock smarter workflows, better insights, and the creative potential of AI — in every student's pocket.
-            </p>
-            <ul class="space-y-4 text-gray-600 text-base list-disc pl-6">
-                <li><strong>Vision Labs:</strong> Monthly creative labs combining Gemini, Google Cloud, and Firebase where students can co-develop impactful solutions to real campus or social issues.</li>
-                <li><strong>Gemini Diaries:</strong> An interactive journal/blog series written by students sharing how they used Gemini to solve problems, learn faster, or build cool stuff.</li>
-                <li><strong>Tech Inclusion Sprints:</strong> Focused events for underrepresented groups to empower their voices in tech, led with empathy and mentorship.</li>
-                <li><strong>Bridge to Industry:</strong> Invite alumni and professionals using Google tools in real-world jobs to mentor students, simulate projects, and share case studies.</li>
-                <li><strong>Campus Gemini Guide:</strong> I’ll create a digital + printable beginner’s guide for students who are new to AI and Google’s ecosystem, helping make the entry point less overwhelming.</li>
-            </ul>
-        </section>
     </main>
+
+    <!-- Separate Fullscreen Section for GSA Vision -->
+    <section id="vision" class="w-full min-h-screen bg-white py-20 px-6 md:px-20">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">🚀 My GSA Roadmap & Vision</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600">1. Inspire Curiosity with AI & Gemini</h3>
+                    <p class="text-gray-700">Workshops and demos on campus using Gemini for resume building, assignment help, and idea generation.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600">2. Student-Led Learning Pods</h3>
+                    <p class="text-gray-700">Circles for collaborative learning with Google tools, ML kits, and peer-teaching vibes.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600">3. Hackathons + GDSC Synergy</h3>
+                    <p class="text-gray-700">Cross-club hackathons with themes powered by Gemini and Google Cloud.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600">4. Showcase Impact Stories</h3>
+                    <p class="text-gray-700">Celebrate student wins via posts, reels, newsletters.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-blue-600">5. Stay Feedback-Driven</h3>
+                    <p class="text-gray-700">Every event gets better with voices from students — inclusivity, always.</p>
+                </div>
+            </div>
+
+            <hr class="my-16 border-gray-300">
+
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-12">🌟 Vision Beyond the Pitch</h2>
+            <ul class="list-disc space-y-6 text-gray-700 text-lg pl-8">
+                <li><strong>Vision Labs:</strong> Monthly creative sessions using Google tools to solve real-world student problems.</li>
+                <li><strong>Gemini Diaries:</strong> Blogs and vlogs where students share how they use Gemini to create or learn.</li>
+                <li><strong>Tech Inclusion Sprints:</strong> Inclusion-led events for underrepresented voices in tech.</li>
+                <li><strong>Bridge to Industry:</strong> Real-world meetups with alumni/pros using Google tools in jobs.</li>
+                <li><strong>Campus Gemini Guide:</strong> A fun digital and printed Gemini starter guide — AI demystified!</li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
